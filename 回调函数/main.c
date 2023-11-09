@@ -15,7 +15,7 @@ int compare_double(const void* p1, const void* p2) {//为了迎合库函数的参数列表
     if (*(double*)p1 < *(double*)p2) {
         return 1;
     }
-    //return (int)(*(double*)p1 - *(double*)p2);//这样写成做差也可以，不拘是多少
+    //return (int)(*(double*)p1 - *(double*)p2);//这样写成做差不行，因为double->int会出问题
 }//需要自己设计一个比较函数,通过这个函数>,<的条件还可以调整从大到小或从小到大
 
 
