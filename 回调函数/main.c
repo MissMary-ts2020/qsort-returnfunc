@@ -37,7 +37,7 @@ int compare_studentage(const void* p1, const void* p2) {//为了迎合库函数的参数列
     //}
     //return 2;
     //其实也可以作差
-    return (((stu*)p1)->age - ((stu*)p2)->age);
+    return (((stu*)p1)->age - ((stu*)p2)->age);//整数做差没问题
 }
 
 
